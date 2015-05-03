@@ -6,6 +6,8 @@ Create encoded url parameters from structs
 
 ## Example
 ```go
+import "github.com/calce/params"
+
 type Params struct {
 	local string		// unexported fields are ignored
 	BeginTime string	`param:"begin_time"`
@@ -23,6 +25,6 @@ p := Params{
 	Number: 999,
 	Money: 999.999,
 }
-s, err := Encode(&p)
+s, err := params.Encode(&p)
 // "begin_time=2013-01-15T00%3A00%3A00Z&end_time=2013-01-31T00%3A00%3A00Z&money=999.999&number=999"
 ```
