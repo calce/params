@@ -10,9 +10,9 @@ type Params struct {
 	local string			// unexported fields are ignored
 	BeginTime string	`param:"begin_time"`
 	EndTime string		`param:"end_time"`
-	Ninja string			`param:"_"`	// fields with param tag "_" are ignored
-	Number int				`param:"number"`
-	Money float64			`param:"money"`	
+	Ninja string		`param:"_"`	// fields with param tag "_" are ignored
+	Number int			`param:"number"`
+	Money float64		`param:"money"`	
 }
 
 p := Params{
