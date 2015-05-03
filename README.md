@@ -7,7 +7,7 @@ Create encoded url parameters from structs
 ## Example
 ```go
 type Params struct {
-	local string			// unexported fields are ignored
+	local string		// unexported fields are ignored
 	BeginTime string	`param:"begin_time"`
 	EndTime string		`param:"end_time"`
 	Ninja string		`param:"_"`	// fields with param tag "_" are ignored
